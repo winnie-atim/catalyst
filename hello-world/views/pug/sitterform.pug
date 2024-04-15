@@ -1,0 +1,58 @@
+doctype html
+| D
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  link(href='../css/index.css' rel='stylesheet')
+  title Document
+// heading section
+section.baby-section
+  .main-heading
+    h3.header Daystar day care system
+  // form section
+  h5.card-title.login-title Sitters Page
+  // hero badge
+  // welcome section
+  .hero-section
+    .form-header
+      h6 Register Sitter
+      a(href='sittertable.html')
+        h6 View Sitter
+  .main-card
+    .card.mycard(style='width: 25rem;')
+      .card-body
+        p.card-text
+          form
+            .mb-3
+              input#sittername.form-control(type='text' placeholder='Sitter Name' aria-describedby='sittername')
+            .row
+              .col
+                input.form-control(type='text' placeholder='DOB' aria-label='DOB')
+              .col
+                input.form-control(type='text' placeholder='gender' aria-label='Gender')
+            br
+            .mb-3
+              input#location.form-control(type='text' placeholder='Location' aria-describedby='location')
+            .mb-3
+              input#recommendersname.form-control(type='text' placeholder="Recommender's Name" aria-describedby='recommendersname')
+            .row
+              .col
+                input.form-control(type='text' placeholder='NIN' aria-label='NIN')
+              .col
+                input.form-control(type='text' placeholder='Religion' aria-label='religion')
+              br
+              br
+            .mb-3
+              input#education.form-control(type='text' placeholder='Level of Education' aria-describedby='education')
+            .row
+              .col
+                input.form-control(type='number' placeholder='Contacts' aria-label='contacts')
+              .col
+                input.form-control(type='number' placeholder='Sitter Number' aria-label='sitternumber')
+              br
+              br
+              .mb-3
+                input#nextofkin.form-control(type='text' placeholder='Next of Kin' aria-describedby='nextofin')
+              button.btn.btn-primary(type='submit') Register Sitter
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
