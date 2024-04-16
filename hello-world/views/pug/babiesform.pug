@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  link(href='../css/index.css' rel='stylesheet')
+  title Document
+// heading section
+section.baby-section
+  .main-heading
+    h3.header Daystar day care system
+  // form section
+  h5.card-title.login-title Babies Page
+  // hero badge
+  // welcome section
+  .hero-section
+    .form-header
+      h6 Register Baby
+      h6 View Baby
+  .main-card
+    .card.mycard(style='width: 25rem;')
+      .card-body
+        p.card-text
+          form
+            .mb-3
+              input#babyname.form-control(type='text' placeholder='Baby Name' aria-describedby='babyname')
+            .row
+              .col
+                input.form-control(type='text' placeholder='Gender' aria-label='gender')
+              .col
+                input.form-control(type='text' placeholder='Age' aria-label='age')
+            br
+            .mb-3
+              input#location.form-control(type='text' placeholder='Location' aria-describedby='location')
+            .mb-3
+              input#nameofguardian.form-control(type='text' placeholder='Name of Guardian' aria-describedby='nameofguardian')
+            .row
+              .col
+                input.form-control(type='text' placeholder='Time of Arrival' aria-label='time')
+              .col
+                input.form-control(type='text' placeholder='Baby Number' aria-label='babynumber')
+              br
+              br
+            select.form-select(aria-label='Default select example')
+              option(selected='') Choose Period
+              option(value='1') Half Day
+              option(value='2') Full Day
+            br
+            select.form-select(aria-label='Default select example')
+              option(selected='') Choose Fee
+              option(value='1') 10000
+              option(value='2') 15000
+            br
+            button.btn.btn-primary(type='submit') Register Baby
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
