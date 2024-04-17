@@ -21,32 +21,32 @@ section.baby-section
     .card.mycard(style='width: 25rem;')
       .card-body
         p.card-text
-          form
+          form(name='babyRegister' action='/api/regregister' method='POST')
             .mb-3
-              input#babyname.form-control(type='text' placeholder='Baby Name' aria-describedby='babyname')
+              input#babyname.form-control(type='text' placeholder='Baby Name' name='babyname' aria-describedby='babyname')
             .row
               .col
-                input.form-control(type='text' placeholder='Gender' aria-label='gender')
+                input.form-control(type='text' placeholder='Gender' aria-label='gender' name='gender')
               .col
-                input.form-control(type='text' placeholder='Age' aria-label='age')
+                input.form-control(type='text' placeholder='Age' aria-label='age' name='age')
             br
             .mb-3
-              input#location.form-control(type='text' placeholder='Location' aria-describedby='location')
+              input#location.form-control(type='text' placeholder='Location' aria-describedby='location' name='location')
             .mb-3
-              input#nameofguardian.form-control(type='text' placeholder='Name of Guardian' aria-describedby='nameofguardian')
+              input#nameofguardian.form-control(type='text' placeholder='Name of Guardian' aria-describedby='nameofguardian' name='nameofguardian')
             .row
               .col
-                input.form-control(type='text' placeholder='Time of Arrival' aria-label='time')
+                input.form-control(type='text' placeholder='Time of Arrival' aria-label='time' name='time')
               .col
-                input.form-control(type='text' placeholder='Baby Number' aria-label='babynumber')
+                input.form-control(type='text' placeholder='Baby Number' aria-label='babynumber' name='babynumber')
               br
               br
-            select.form-select(aria-label='Default select example')
+            select.form-select(aria-label='Default select example' name='period')
               option(selected='') Choose Period
               option(value='1') Half Day
               option(value='2') Full Day
             br
-            select.form-select(aria-label='Default select example')
+            select.form-select(aria-label='Default select example' name='fee')
               option(selected='') Choose Fee
               option(value='1') 10000
               option(value='2') 15000
